@@ -1,0 +1,20 @@
+1. ["10", "15", "2"=>array("13" => "15"), "e", "f"] this array will be correct?
+
+2. please convert above array as json format
+
+3. Studuent enrollment -> Architecture
+
+4. get student list from april month (Mysql) then february
+
+5. get student list from 10 to 20 days (Mysql)
+
+6. write Jquery ajax syntax?
+
+7. ajax response (10, 15, 12, 4, 3, 5, 8, 7, 10) I need to print out odd or even number ex <div>10 Even </div>, <div>15 Add </div>
+
+8. <div>10 Even </div>, <div>15 Add </div> its should display background color using jquery selector
+
+9. why we are using ajax in web page?
+
+10. write a program to sort ascending order? array(10, 15, 12, 4, 3, 5, 8, 7, 10);
+

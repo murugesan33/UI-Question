@@ -1,0 +1,258 @@
+1. what are storage methods?
+
+	Asynchronouse is a storage method of react native.
+
+2. redux
+
+3. how many reducers 
+
+4. what is flow of react native?
+	Flow is a static type checker in javascript code. Its developed by Facebook for React Native Component. It let you annotate the variable, function, react native component have the speical type syntax catch the mistake early.
+
+5. use of bind 
+
+6. multiple render in single component
+
+7. use of constructor
+		constructor method is used to initialise our component with state intia. before the component UI element not yet rendered.
+	
+
+8. what is async storage
+
+9. storage methods in redux
+
+native code bridge to react native 
+
+how to link redux with react native using bridge
+
+how to use icons based on resolution 
+
+What is the significance of keys in react native?
+
+what is functional components and class based components
+
+what is render what its use. did we use render in functional component?
+
+what is props and state?
+
+how to pass data from child to parent componet?
+
+higher order function or component?
+
+controller and uncontroller?
+
+
+
+what is virtual DOM ?
+
+2. react native deployment
+
+3. difference between fetch & normal ajax
+
+10. AXIOS & FETCH API difference?
+
+4. how to handle when network error comes
+
+6. how to hanlde the session
+
+7. node modules
+
+8. scaff folding -> folder structure
+
+9. lifecyle methods 
+
+10. react navigation
+
+11. how to create project in react native command line
+
+13. app.js 
+
+14. what is react native?
+
+15. why we are using react native? (advantage or feature).
+
+16. how to scroll the page which tags?
+
+17. error handleing in react native js
+
+18. spread operator on es6
+
+19. fetch
+
+20. how to find out component have any error
+
+22.We can have 2 render in single component
+
+22. How to connect with redux in react native
+
+24. localstorage
+
+25. how to handle image resolution in react native?
+
+21.  // ReactJS 
+ this.state = {
+    count : 1
+ }
+ 
+ this.setState({ count : this.state.count++ })
+	It would not work, because we are updating the state using setState "this.state.count++" it will mutated the state.
+ 
+ 
+22. how to pass the data from child to parent 
+
+23. how to link react-native with native
+
+24.  how to link library in react native
+
+25. react native UI components?
+
+26. how to segrated ios and android?
+
+27. how to pass child data to parent component?
+
+28. how to style in react native?
+
+29. 
+
+
+
+object 2 properties having array
+first property having : 2 objects
+2nd having 9 objects
+
+
+1.Default parameters -  we can put the default values in the signature of the function. eg. function add(a=5,b=10,c)
+
+2.Template litreals - way to output a varible in a string - for eg. 'he is ${what} boy?'
+
+3.Multiline strings - using backticks and commas.. eg. `Hello Sir/Madam
+            Please find password sent on your email.<br><br>\n545abea<br><br>
+
+
+
+
+            Warm Regards`
+
+4.Arrow functions - It makes the 'this' of the particular event behave properly, and also handle auto binding
+
+5.Promise - better than regular callbacks
+
+6.Const and let - const is immutable and block scoped and let is block scoped
+
+7.Classes in Es6
+
+8.Modules in es6 - import,export modules.
+
+9.Spread operator in Es6
+
+10.Destructuring objects - eg. const obj1 = {a:8,b:10}; const(a,b) = obj1;
+
+Pure function and pure components & stateless components?
+
+what is class component & functional component?
+
+dont want to re-render the page if state or props change
+
+what are the scenior render componenet is renderred?
+
+photon company interview Question:-
+
+1. default value of flex direction?
+
+2. images listing from directory or upload the images?
+
+3. Refresh controller?
+
+4. section list?
+
+5. what are the components you used?
+
+6. have you used sidebar?
+
+7. flat list?
+
+8. life cylce method what are the things you used?
+
+9. new life cycle methods?
+
+10. errorboundry?
+
+11. redux?
+
+12. state and prop?
+
+13. flex-grow?
+
+14. justify-content in css?
+
+15. justify-content and align-item difference css?
+
+16. how to cancel the api request in fetchapi?
+
+React native
+
+1. redux
+
+2. how to handle state management?
+
+3. what are the life cycle method?
+
+4. how to pass data from one component to another component?
+
+5. what are the component used in your projects?
+
+6. what is the uses of your iquestion5.0 projects?
+
+7. what is db linking?
+
+8. what is errorboundry?
+
+
+
+
+
+
+https://medium.com/the-andela-way/understanding-react-components-37f841c1f3bb
+https://www.freecodecamp.org/news/this-is-why-we-need-to-bind-event-handlers-in-class-components-in-react-f7ea1a6f93eb/
+https://medium.com/@adamjacobb/react-native-performance-arrow-functions-binding-3f09cbd57545
+https://alligator.io/react/react-native-navigation/
+https://www.edureka.co/blog/interview-questions/react-interview-questions/
+https://alligator.io/react/react-native-redux/
+https://facebook.github.io/react-native/docs/signed-apk-android
+https://medium.com/@hasangi/making-a-signed-apk-for-your-react-native-application-98e8529678db
+https://pusher.com/tutorials/consume-restful-api-react
+https://appdividend.com/2018/08/04/react-native-redux-example-tutorial/
+https://medium.com/@spencer_carli
+mapstatetoprops connecting a screen to redux
+mapDispatchToProps getting a action from a view
+and sending through connect function.
+https://medium.com/@vigowebs/frequently-asked-react-js-interview-questions-and-answers-36f3dd99f486
+https://medium.com/siliconwat/data-structures-in-javascript-1b9aed0ea17c
+Our App dispatches an action, it is passed into reducer; the reducer returns a fresh instance of the state; the store notifies our App and it can begin it's re render as required.
+https://github.com/sudheerj/reactjs-interview-questions#what-is-react
+https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976
+https://medium.com/@thejasonfile/fetch-vs-axios-js-for-making-http-requests-2b261cdd3af5
+
+dblinks reference:-
+
+https://stackoverflow.com/questions/48110892/redirection-from-website-to-react-native-app
+https://stackoverflow.com/questions/28744167/android-deep-linking-use-the-same-link-for-the-app-and-the-play-store/28792160#28792160
+https://medium.com/@parkerdan/react-native-universal-linking-ios-deep-linking-android-with-a-rails-server-d993649ae6be
+https://developers.google.com/analytics/devguides/collection/android/v4/campaigns#campaign-params
+
+ 
+
+https://development-ilinkintegrate.completemr.com/ilink/pms_client/tribe_v3/deep_linking.php
+https://stackoverflow.com/questions/52271284/react-native-implementing-reward-referral-invite-and-earn
+
+ 
+
+https://developer.android.com/google/play/installreferrer/igetinstallreferrerservice
+
+https://www.google.com/search?ei=hK8pXPCKGIuc9QPdv5j4DA&q=get+parameters+in+url+after+installed+in+play+store+reactnative&oq=get+param&gs_l=psy-ab.3.0.35i39l2j0l8.1129722.1135732..1140698...5.0..0.114.1212.12j2......0....1..gws-wiz.......0i71j0i67j0i131i67j0i10j0i131.AL4ysTpyDKw
+https://stackoverflow.com/questions/53780498/how-can-i-get-parameters-from-play-store-download-link
+https://www.npmjs.com/package/react-native-firebase
+https://rnfirebase.io/docs/v5.x.x/installation/initial-setup
+https://rnfirebase.io/docs/v5.x.x/installation/android
+
+

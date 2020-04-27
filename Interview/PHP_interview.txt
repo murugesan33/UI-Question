@@ -1,0 +1,30 @@
+1. why we are using framework?
+
+2. why we are using extension? like .tbl, .php etc..
+
+3. php.ini file we can write php code (recganizing)
+
+4. How to reduce the execution time. In mysql query
+
+5. uses of version control system
+
+6. different between "raw-code" and framework?
+
+7. why we are using pdo?
+
+8. how we can call api? like paybal etc...
+
+9. www.gmail.com/ccc/dd/ee?a=10 each one explaniation
+
+10. what is the use of router in framework?
+
+11. what is the use of caching?
+
+12. Searching a products?
+
+13. codeigniter XSS attack?
+
+14. methods - get,post,put,delete
+
+
+

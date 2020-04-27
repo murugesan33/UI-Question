@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<head>
+		<title>Two</title>
+	</head>
+	<body>
+		<p id="strName"> </p>
+		<script type="text/javascript">
+			function getParam( name )
+			{
+				 //name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+				 //alert(name);
+				var regexS = "[\\?&]"+name+"=([^&#]*)";
+				//alert(regexS);
+				 var regex = new RegExp( regexS );
+				 //alert(regex);
+				 var results = regex.exec( window.location.href );
+				 //alert(results);
+				 //alert(name+" "+regexS+" "+regex+" "+results);
+				 if( results == null )
+				  return "";
+				else
+				 return results[1];
+			}
+
+			var fname = getParam( 'fname' );
+			var lname = getParam( 'lname' );
+			var name = "Hi "+fname+" "+lname;
+			document.getElementById('strName').innerHTML = name;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<head>
+		<title>One</title>
+		<script type="text/javascript">
+			function getDetails(){
+				//alert('welcome to all');
+				var fname = document.getElementById('fname').value;
+				var lname = document.getElementById('lname').value;
+				createCookie('fname', fname, 2);
+				//createCookie('lname', lname, 2);
+				
+				alert(readCookie('fname'));
+				//window.open("E:/xampp/htdocs/murugesh/javascript/displaystring/cookie/two.htm");
+			}
+			
+			function createCookie(name,value,days) {
+				alert(name+"==="+value+"===="+days);
+				var expires = "";
+				if (days) {
+					var date = new Date();
+					alert(date);
+					date.setTime(date.getTime() + (days*24*60*60*1000));
+					expires = "; expires=" + date.toUTCString();
+					alert(expires);
+				}
+				document.cookie = name + "=" + value + ";" +expires + "; path=/";
+			}
+			function readCookie(name) {
+				var nameEQ = name + "=";
+				var decodedCookie = decodeURIComponent(document.cookie)
+				var ca = decodedCookie.split(';');
+				alert(ca+"==="+document.cookie);
+				for(var i=0;i < ca.length;i++) {
+					var c = ca[i];
+					while (c.charAt(0)==' ') c = c.substring(1,c.length);
+					if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+				}
+				return null;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="fname" id="fname"></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lname" id="lname"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="button" name="clickme" id="clickme" value="Click Me" onclick="getDetails();"></td>
+			</tr>
+		</table>
+	</body>
+</html>

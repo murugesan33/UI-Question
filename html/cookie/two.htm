@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<head>
+		<title>Two</title>
+	</head>
+	<body>
+		<p id="strName"> </p>
+		<script type="text/javascript">
+			function readCookie(name) {
+				var nameEQ = name + "=";
+				var decodedCookie = decodeURIComponent(document.cookie)
+				var ca = decodedCookie.split(';');
+				alert(ca+"==="+document.cookie);
+				for(var i=0;i < ca.length;i++) {
+					var c = ca[i];
+					while (c.charAt(0)==' ') c = c.substring(1,c.length);
+					if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+				}
+				return null;
+			}
+
+			var fname = readCookie( 'fname' );
+			var lname = readCookie( 'lname' );
+			var name = "Hi "+fname+" "+lname;
+			document.getElementById('strName').innerHTML = name;
+		</script>
+	</body>
+</html>

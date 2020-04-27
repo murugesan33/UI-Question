@@ -1,0 +1,95 @@
+2. box shadow properties
+
+3. Html5 new features -> localstorage, form element (date, url, datalist etc), media audio & video, canvas 2d drawing
+
+4. How to refresh a page every 10 sec -> meta tag
+
+5. Which one it will run execute fast id or class??
+
+1. what are the feature in HTML5?
+
+2. How to align a <div> to the middle (horizontally/width) of the page?
+
+3. what is the difference between sessionstorage and localstorage?
+
+4. inline and block statement?
+
+5. web packs 
+
+6. semantic tags in html
+
+1. datalist, canvas
+
+6. Web Worker concepts?
+
+4. what is the difference between get & post method to reading data in HTMl?
+
+5. how form data will submit?
+
+7. what is the uses of iframe?
+
+	iframe (inline frame) is an HTML document embedded inside another HTML document.
+	
+	iframe HTML element is used to insert content from another source such as advertisment into a webpage.
+	
+9. what is canvas and svg?
+
+10. what is cookies?
+
+11. what is the difference between cookies and localstorage?
+
+12. html5 features?
+
+13. https://www.softwaretestinghelp.com/html-interview-questions/	
+
+
+CSS:-
+
+1. relative and absolute position difference?
+
+2. <span>This is my test</span> I need to change height in span tage? display:inline block
+
+7. absolute and fixed difference
+
+8. display inline and inline block difference?
+
+9. padding-bottom and  padding-top applies to inline-element ?
+
+10. margin-bottom and  margin-top applies to inline-element ?
+
+12. how many display options are there in css?
+
+13. inline and block elements?
+
+14. css2 and css3?
+
+15. position and absolute difference
+
+16. zindex uses?
+
+17. flex uses?
+
+18. opacity uses?
+
+19. browser compatability?
+
+Bootstrap:-
+
+1. contianer and container fluid difference?
+
+6. boxmodel in css
+
+7. what is the use of bootstrap
+
+4. web index?
+
+
+
+
+RestAPI
+
+7. WSDL
+
+8. REST -> what is the response Json or etc..
+
+9. SOAP -> XML it will take the response

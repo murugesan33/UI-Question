@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+	<head>
+		<title>Two</title>
+	</head>
+	<body>
+		<p id="strName"> </p>
+		<script type="text/javascript">
+			var fname = localStorage.getItem( 'fname' );
+			var lname = localStorage.getItem( 'lname' );
+			var name = "Hi "+fname+" "+lname;
+			document.getElementById('strName').innerHTML = name;
+		</script>
+	</body>
+</html>
