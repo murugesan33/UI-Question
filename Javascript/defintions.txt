@@ -1,0 +1,48 @@
+Event bubbling:-
+
+1. It relates to the order in which event handlers are called on when one element is inside another elment, but both element have reigester event listiner on same event.
+
+event bubbling return boolean value.
+
+
+Encapsulation:-
+
+	Encapsulation is a main concepts of object oriented programming. It allows an object to group all private and public members under a single name.
+	
+	
+Arrow function and normal functions difference:-
+	1. arrow functions introduced on Es6
+	2. regular functions and arrow functions do the similar process main difference
+	3. arrow functions its own bind 'this' operator.
+	4. arrow functions are only ‘callable’ and not constructible.
+	
+	
+DOM?
+
+	1. DOM Standards for Document Object Modle.
+	
+	2. It contains all the elements inside tree structure.
+
+	3. DOM is a platform and language-netural interface that allows the programs and script to dynamically access and update the content, structure, style of a document
+	
+Prototype:
+
+	When a constructure function is created in javascript. Javascript engines adds a prototype property for that functions.
+
+	Based on that we can add / modify that function and reuse the properties and methods in another function.
+
+
+Inheritance:-
+
+	In classical inheritance methods from base class get copied into derived class. In Javascript inheritance support by using prototype object.
+
+
+	
+	
+	
+	
+	
+	
+
+
+
