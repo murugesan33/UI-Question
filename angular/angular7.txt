@@ -1,0 +1,132 @@
+REST API with cloud functions
+dcnc00067
+58JXwwgS
+
+json-server:-
+json-server --watch db.json -> execute command for 
+
+https://coursetro.com/posts/code/171/Angular-7-Tutorial---Learn-Angular-7-by-Example
+
+decoratores viewchild concepts in angular8
+
+dcnc00067
+58JXwwgS
+
+1. need to install node.js
+2. npm install -g @angular/cli
+3. ng new [project name]
+4. if current folder you install visualstudio code editor
+	go to the particular project 
+	c:\users\gary\code\ng7>code .
+5. 	c:\users\gary\code\ng7>ng serve -o its open for default browser
+
+6 to generate compenent
+		ng g for generate c for component home page
+7. to generate service api
+		ng g s for service http
+		
+8. how to deploy our projects
+			ng build --prod	
+
+9. how to generate the test case (Runs unit tests in a project)
+	ng test --codecoverage=true
+	ng test --code-coverage
+
+
+10. how to generate the test case (Runs unit tests in a project)
+	ng test --source-map=false
+
+11. particular version could be install
+	npm install @angular/animations@8.2.7
+
+Testing unit case
+besturl: https://medium.com/swlh/angular-unit-testing-jasmine-karma-step-by-step-e3376d110ab4
+
+dcnc00030
+wkrJ04D*	
+
+Available Commands:
+  add Adds support for an external library to your project.
+  analytics Configures the gathering of Angular CLI usage metrics. See https://v8.angular.io/cli/usage-analytics-gathering.
+  build (b) Compiles an Angular app into an output directory named dist/ at the given output path. Must be executed from within a workspace directory.
+  deploy (d) Invokes the deploy builder for a specified project or for the default project in the workspace.
+  config Retrieves or sets Angular configuration values in the angular.json file for the workspace.
+  doc (d) Opens the official Angular documentation (angular.io) in a browser, and searches for a given keyword.
+  e2e (e) Builds and serves an Angular app, then runs end-to-end tests using Protractor.
+  generate (g) Generates and/or modifies files based on a schematic.
+  help Lists available commands and their short descriptions.
+  lint (l) Runs linting tools on Angular app code in a given project folder.
+  new (n) Creates a new workspace and an initial Angular app.
+  run Runs an Architect target with an optional custom builder configuration defined in your project.
+  serve (s) Builds and serves your app, rebuilding on file changes.
+  test (t) Runs unit tests in a project.
+  update Updates your application and its dependencies. See https://update.angular.io/
+  version (v) Outputs Angular CLI version.
+  xi18n Extracts i18n messages from source code.
+
+
+Downgrade npm to v4.6.1.
+npm install npm@4
+Version >= 5 is unstable.
+
+
+Step 1: Try to clear the cache first using
+
+     npm cache clear --force
+Step 2: Try to install again
+
+    npm install -g @angular/cli
+
+
+webstore data pass from one component to another componenet
+
+npm add @ngrx/store
+
+
+{
+  "posts": [
+    {
+      "id": 1,
+      "fullname": "murugesan subbiah",
+      "username": "murugesh",
+      "password": "123456",
+      "email": "murugesan.subbiah@hcl.com",
+      "address": "Wed Sep 20 2019 17:22:41 GMT+0700",
+      "contact" :9986188157,	
+    },
+    {
+      "id": 2,
+      "fullname": "mahes ramlingam",
+      "username": "mahes",
+      "password": "123456",
+      "email": "mahes@hcl.com",
+      "address": "Wed Sep 20 2019 17:22:41 GMT+0700",
+      "contact" :9986188157,	
+    },
+    {
+      "id": 3,
+      "fullname": "ramkrishnan bhaiya",
+      "username": "ramkrish",
+      "password": "123456",
+      "email": "ramkrish@hcl.com",
+      "address": "Wed Sep 20 2019 17:22:41 GMT+0700"
+    },
+    {
+      "id": 4
+    }
+  ]
+}
+
+
+"node_modules/jquery/dist/jquery.min.js",
+"node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+
+1. lazyloading
+2. how to interact with you
+3. what is the services
+4. how to debug
+5.@view
+6. observable and promises
+7. angularjs & angular
+8. tree shaking angular
+9. functional component

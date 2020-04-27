@@ -1,0 +1,32 @@
+Day 1:- 
+1. Components & Templates
+2. Forms
+3. Router Module
+4. HttpClient
+5. Observable & RxJS
+6. Directives
+7. Data passing from parent to child
+8. Data passing from child to parent
+
+UI Components libraries:-
+1. Primeng
+2. ngbootstrap
+
+
+Day 2:-
+
+1. Get Selected dropdown value -> done
+2. Lightbox(overlay)
+3. Accordion
+4. Tab Menu  -> Done
+5. Input Rating
+6. Input Slider
+7. Carousel -> Done
+8. Table with filter and tree Table
+9. Data view
+10. Charts
+11. Toast
+12. Date Picker - done
+13. Custom Validation - Done
+
+

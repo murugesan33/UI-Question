@@ -1,0 +1,5 @@
+1. how to find out the 2 object have dublicate values
+2. without typeof how to find out the datetype of the variables
+3. async & await
+4. event bubbling and event captureing
+5. what is the difference between stoppropogation and immediateprogration

@@ -1,0 +1,9 @@
+1. npm install
+
+2. npm run serve
+
+3. shift alt F -> auto align the code
+
+4. command for each line
+
+5. variable name should be proper

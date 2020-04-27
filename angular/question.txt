@@ -1,0 +1,50 @@
+1. eventlistinter && Event emitters
+2. event bubling & capture bubling
+3. map, filter, reduce
+4. 1234 -> output should be one thousands two hundred and thirty four
+5. promises
+6. arrow function
+7. what is the different between arrow function and constructor function
+8. destructor operators
+9. default parameters
+10. how to find out object length?
+11. what is the closure function? example.
+
+
+
+
+css:
+1. box model -> content, padding, border, margin
+2. postition : relative & sticky
+
+
+html5:-
+1. localstorage & sessionstorage some use cases
+2. html5 features
+
+API:-
+REST API
+
+
+general question:;
+1. how to performance the web page using "infinite scroll"
+2. 
+
+
+angularJS:
+grunt,gulp -> task runner
+1. how to create components
+2. what are the life cycle
+3. what is the use of specf.ts
+4. what is the difference between typescript and javascript
+5. 
+
+
+how to use unit test case.
+what is the command line
+
+
+SVN controls:
+github
+
+how to use it?

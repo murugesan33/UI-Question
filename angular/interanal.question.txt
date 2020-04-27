@@ -1,0 +1,40 @@
+1. Javascript basic interview question. (app)
+
+2. http://es6-features.org/#Constants Es6 features concepts
+
+             1. constants
+             2. scoping
+             3. Arrow functions
+             4. Extended parameter Handling
+             5. Template literals
+             6. Extended literals
+             7. Destructuring Assignments
+             8. Modules
+             9. Classes
+             10. Promises
+             11. Meta-Programming
+             12. Internationalization & Localization
+
+3. https://www.w3resource.com/javascript-exercises/
+          1. Basic
+                    1. Fundamental (ES6) Part - 1
+                    2. Fundamental (ES6) Part - 2
+          2. Functions
+          3. Recursion
+          4. Math, Array, Datetime, String/Text
+          5. Validation with Regular
+          6. expression
+
+4. Essential JavaScript Interview Questions (https://www.toptal.com/javascript/interview-questions)
+
+5. ING Interview Question:-
+
+     1. Form validation
+     2. javascript code animation
+     3. javascript code optimaiztion
+
+6.Javascript Form Validation:-
+          1. age, email, password etc.
+
+7. Angular components:-
+lazyloading, components, services constants etc.

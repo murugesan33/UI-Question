@@ -1,0 +1,30 @@
+https://discord.gg/gxvEWGU -> free courses
+
+What is angular?
+
+	Angular is a javascript framework which allows you to create reactive 
+	single page applications. (SPA)
+
+	Single page applications what does its means, its a applications, 
+	and navigate with each page, and we can see in the url that changes 
+	its happen, and it won't load the pages. and also we have one index.html file 
+	in this file its load all the javascript files. 
+	and render it in the browser through the DOM, 
+	and also we can  very quick updates the elements, and interact with server also. 
+	its look and feel like a mobile applications.
+	
+what is Typescript?
+	Typescript is the superset of Javascript, it have more features like classes, interface
+	etc. and also main thing name of typing if you are declaring the variable as integer, but when you
+	are assing as string value, writing time itself its shown the error, but javascript 
+	there we have dynamic typing. so therefore we can write a strong code, it will check
+	it write time, not run time.
+	
+	
+	
+	
+	
+	
+	
+	
+		
