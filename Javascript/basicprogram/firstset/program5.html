@@ -1,0 +1,28 @@
+<html>
+
+<body>
+<div>2. Find the Most Frequent number from an array Integer array [1, 1, 1, 2, 2]  SAMPLE OUTPUT  1</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var input = [1, 1, 1, 2, 2, 5, 5, 5, 5, 6];
+var tempobject = {}, count = 0, output = "";
+for (var i = 0; i < input.length; i++) {
+  if (tempobject[input[i]]) {
+    tempobject[input[i]]++;
+  } else {
+    tempobject[input[i]] = 1;
+  }
+
+  if (count < tempobject[input[i]])
+  {
+    count = tempobject[input[i]];
+    output = input[i];
+  }
+}
+document.getElementById("output").innerHTML = output;
+</script>
+
+</html>

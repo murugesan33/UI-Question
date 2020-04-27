@@ -1,0 +1,22 @@
+<html>
+
+<body>
+<div>1. Given an input string, reverse the string word by word. For example, Given s = "the sky is blue", return "blue is sky the".</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var input = "the sky is blue";
+var splittedArray = input.split(" ");
+var output = "", length = splittedArray.length;
+for (var i = (length-1); i >= 0; i--) {
+    output += splittedArray[i] + " ";
+}
+// while (length--) {
+//     output += splittedArray[length] + " ";
+// }
+document.getElementById("output").innerHTML = output.trim();
+</script>
+
+</html>

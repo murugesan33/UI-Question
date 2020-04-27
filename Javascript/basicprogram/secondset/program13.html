@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div>How to find the repeated Character which presented first in a given String?
+    <br>Eg: rose is rose in color
+    <br></br>Expected Output: r  [s,r,o,e,i are repeated; but r is presented first in the string]</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="extraOutput" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input = "rose is rose in color", tempArray = [], repeated = [], output = "";
+    document.getElementById("input").innerHTML = "Given Input : " + input;
+    var inputArray = input.split("");
+    for (let i in inputArray)
+    {
+        if (tempArray.indexOf(inputArray[i]) === -1) {
+            tempArray.push(inputArray[i]);
+        } else if(repeated.indexOf(inputArray[i]) === -1) {
+            repeated.push(inputArray[i]);
+        }
+    }
+    document.getElementById("extraOutput").innerHTML = "Repeated Chars: " + repeated.join(",");
+    // stop the progeam here to just show the repeated Characters
+    let answer = [];
+    for (let ch in tempArray) {
+        if (repeated.indexOf(tempArray[ch]) !== -1){
+            answer.push(tempArray[ch]);
+        }
+    }
+    document.getElementById("output").innerHTML = "First Repeated: " + answer[0] + "<br>All Repated Characters: " + repeated.join(",");
+</script>
+</html>

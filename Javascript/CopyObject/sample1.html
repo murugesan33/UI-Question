@@ -1,0 +1,40 @@
+<html>
+<title>using copy the object with spread operator & Object.assign()</title>
+<meta charset="utf-8"/>
+<head>
+<script>
+	var obj ={
+		fullName:"Murugesan",
+		age:29,
+		isMarried:'single',
+		a : {
+			b : 20
+		}
+	}
+	let obj1 = {...obj}
+	obj.age = 30
+	console.log(obj);
+	console.log(obj1);
+	
+	//object inside nested object change the value
+	obj.a.b = 40;
+	console.log(obj);
+	console.log(obj1);
+	
+	let obj2 = Object.assign({},obj);
+	obj.age = 5
+	console.log(obj);
+	console.log(obj2);
+	
+	obj.a.b = 50;
+	console.log(obj);
+	console.log(obj2);
+	
+	
+	
+	
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div>Multiply the digits, if 0 comes join that with previous element.
+    <br>Eg: if input is 2743, the output will be 168 (2*7*4*3),
+    <br></br>12034 => 1 * 20 * 3 * 4 => 240
+    <br></br>10034 => 100 * 3 * 4 => 1200</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input = 10034, answer = 1, r, s = 1;
+    document.getElementById("input").innerHTML = "Given Input : " + input;
+    while(input > 0) {
+        r = input % 10;
+        if (r > 0){
+            answer *= r * s;
+            s = 1;
+        } else {
+            s *= 10;
+        }
+        input = Math.floor(input / 10);
+    }
+    document.getElementById("output").innerHTML = "Product of digits : " + answer;
+</script>
+</html>

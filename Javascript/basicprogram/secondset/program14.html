@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div>How to find the Character which got repeated first in a given String?
+    <br>Eg: rose is rose in color
+    <br></br>Expected Output: s  [even though r also repeated; but s is got repeated first in the string]</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input = "rose is rose in color", tempArray = [], output;
+    document.getElementById("input").innerHTML = "Given Input : " + input;
+    let inputLength = input.length;
+    for (let i=0; i<inputLength; i++)
+    {
+        if (tempArray.indexOf(input[i]) === -1) {
+            tempArray.push(input[i]);
+        } else {
+            output = input[i];
+            break;
+        }
+    }
+    document.getElementById("output").innerHTML = "First Repeated: " + (output ? output : "No Repeatation");
+</script>
+</html>

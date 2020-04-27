@@ -1,0 +1,30 @@
+<html>
+
+<body>
+<div>1. You are supposed to find out which character occurs the maximum number of times and the number of its occurrence, in the given string. For example, if your string was: aaabbaabbcacc, your output would be: a 6</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var input = "aaabbaabbcacc";
+var tempobject = {}, count = 0, output = "";
+
+for (var i = 0; i < input.length; i++) {
+  if (tempobject[input.charAt(i)]) {
+    tempobject[input.charAt(i)]++;
+  } else {
+    tempobject[input.charAt(i)] = 1;
+  }
+   //console.log(tempobject);
+  if (count < tempobject[input.charAt(i)])
+  {
+    count = tempobject[input.charAt(i)];
+    output = input.charAt(i);
+  }
+}
+
+document.getElementById("output").innerHTML = output + " : " + count;
+</script>
+
+</html>

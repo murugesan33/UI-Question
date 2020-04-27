@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div>Write a method which will remove any given character from a String
+    <br>Eg: Rose is rose in color. remove the charector 'r'
+    <br></br>Expected Output: ose is ose in colo.</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input = "Rose is rose in color", removal = "r", output = "";
+    document.getElementById("input").innerHTML = "Given Input : " + input;
+    let inputArray = input.split("");
+    let inputLength = inputArray.length;
+    for (let i=0; i<inputLength; i++)
+    {
+        if (inputArray[i].toLowerCase() !== removal.toLowerCase()) {
+            output += inputArray[i];
+        }
+    }
+    document.getElementById("output").innerHTML = "Output: " + output;
+</script>
+</html>

@@ -1,0 +1,22 @@
+<html>
+
+<body>
+<div>2. Reverse a given word or string without using .reverse() method. Sample “Hello World” Output: “dlroW olleH”</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var input = "Hello World";
+var length = input.length;
+var output = "";
+while (length--) {
+  output += input[length];
+}
+// for (var i = (length-1); i >= 0; i--) {
+//     output += input[i];
+// }
+document.getElementById("output").innerHTML = output;
+</script>
+
+</html>

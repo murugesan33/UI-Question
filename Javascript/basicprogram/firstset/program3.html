@@ -1,0 +1,21 @@
+<html>
+
+<body>
+<div>3. Write a function to find the largest word in a string.</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var input = "My Name is Aruna";
+var splittedArray = input.split(" ");
+var largestWord = "";
+for (var i = 0; i < splittedArray.length; i++) {
+    if (largestWord.length < splittedArray[i].length) {
+        largestWord = splittedArray[i];
+    }
+}
+document.getElementById("output").innerHTML = largestWord;
+</script>
+
+</html>

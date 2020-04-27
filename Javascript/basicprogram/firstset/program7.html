@@ -1,0 +1,22 @@
+<html>
+
+<body>
+<div>3. Print all odd or even numbers [50,72,11,03,59,66,21,54,60,47]</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var input = [50,72,11,03,59,66,21,54,60,47];
+var oddNumbers = [], evenNumbers = [];
+for (var i = 0; i < input.length; i++) {
+  if (input[i] % 2 == 0) {
+      evenNumbers.push(input[i]);
+  } else {
+      oddNumbers.push(input[i]);
+  }
+}
+document.getElementById("output").innerHTML = "Even Numbers : " + evenNumbers.join(",") + ", Odd Numbers : " + oddNumbers.join(",");
+</script>
+
+</html>

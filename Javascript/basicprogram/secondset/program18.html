@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 2 Maximum</title>
+</head>
+
+<body>
+<div>How to find the top two maximum number & 2nd Highest number in an array?</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+<div id="output2" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input = [17,38,35,6,239,29];
+    let arrayLength = input.length;
+    for (let i = 0; i < 2; i++) { // as per need, change the condition limit. here top 2 number - So 2. if full sorting - arrayLength
+        for (let j = 1; j < arrayLength; j++) {
+            if (input[i] < input[j]) { // input[i] > input[j] // > for top 2 lowest number
+                let temp = input[i];
+                input[i] = input[j];
+                input[j] = temp;
+            }
+        }
+    }
+    document.getElementById("output").innerHTML = "Top 2 Maximum numbers: " + input[0] + ", " + input[1];
+    // ------------------------------------------------------------------------------------------------ //
+
+    // For finding nth Highest - no need of swapping. deal with variable max
+    for (let i = 0; i < 2; i++) { // as per need, change the condition limit. here 2nd highest number - So 2.
+        var max = input[i];
+        for (let j = 1; j < arrayLength; j++) {
+            if (max < input[j]) { // input[i] > input[j] // > for 2nd lowest lowest number
+                max = input[j];
+            }
+        }
+    }
+    document.getElementById("output2").innerHTML = "2nd Highest number: " + max;
+</script>
+</html>

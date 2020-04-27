@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anagram</title>
+</head>
+
+<body>
+<div>How to check if two String are Anagram?
+    <br>A words formed by same letters - rearranging the letters of another and same count. <br>Eg:- mary-army, stop-tops
+</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input1 = "army", input2 = "mary", answer;
+    document.getElementById("input").innerHTML = "Given Input : " + input1 + "-" + input2;
+    if (input1.length != input2.length) {
+        answer = "Not Anagram";
+    } else {
+        let len = input1.length, index;
+        var input2Array = input2.split("");
+        for (let i = 0; i<len; i++) {
+            index = input2Array.indexOf(input1[i]);
+            if (index < 0) { // index will be -1, if not present
+                //answer = "Not Anagram";
+                break;
+            } else {
+                input2Array.splice(index, 1); // delete input2Array[index] will not unset the index, just make the value undefined.
+            }
+        }
+        answer = input2Array.length ? "Not Anagram" : "Anagram!";
+    }
+    document.getElementById("output").innerHTML = "Words are " + answer;
+</script>
+</html>

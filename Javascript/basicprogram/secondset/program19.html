@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pairs</title>
+</head>
+
+<body>
+<div>How to find all pairs in an array of integers whose sum is equal to the given number?</div>
+<br>
+<div>Eg:- Array: [4,7,2,1,10,8,3,5,0,11], Number:10 means Output = 7+3, 2+8, 10+0</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input = [4,7,2,1,10,8,3,5,0,11,-1], sum = 10, pairedNumbers = [], pairs = [];
+    document.getElementById("input").innerHTML = "Input Array: [" + input.join() + "]<br>Sum number: " + sum;
+    for (let i in input) {
+        let needed = sum - input[i];
+        if (input[i] === needed && input.indexOf(needed) === input.lastIndexOf(needed)) {
+            // if this condition is not there, 5+5 also will be showing in output. There only one 5 here, so we couldn't pair it as 5,5
+            pairedNumbers.push(input[i]);
+        }
+        else if (!pairedNumbers.includes(input[i]) && !pairedNumbers.includes(needed) && input.includes(needed)){
+            pairs.push(input[i] + "+" + needed);
+            pairedNumbers.push(input[i],needed);
+        }
+    }
+    document.getElementById("output").innerHTML = "Pairs: " + pairs.join(", ");
+</script>
+</html>

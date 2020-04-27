@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div>How to find the first non repeated character of a given String?
+    <br>Eg: rose is rose in color
+    <br></br>Expected Output: n  [n,c,l are non repeated]</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input = "rose is rose in color", tempArray = [], repeated = [], output = "";
+    document.getElementById("input").innerHTML = "Given Input : " + input;
+    var inputArray = input.split("");
+    for (let i in inputArray)
+    {
+        if (tempArray.indexOf(inputArray[i]) === -1) {
+            tempArray.push(inputArray[i]);
+        } else if(repeated.indexOf(inputArray[i]) === -1) {
+            repeated.push(inputArray[i]);
+        }
+    }
+    let answer = [];
+    for (let ch in tempArray) {
+        if (repeated.indexOf(tempArray[ch]) === -1){
+            answer.push(tempArray[ch]);
+        }
+    }
+    document.getElementById("output").innerHTML = "First non Repeated: " + answer[0] + "<br>Non Repated Characters: " + answer.join(",");
+</script>
+</html>

@@ -1,0 +1,51 @@
+<html>
+ <head>
+	<title>Encapsulation is the main concept of object oriented programming. Its allow object to group all public & private members under a single name.</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		var Managers = {}; 
+		Managers.CssManager = (function(){ 
+    
+			//Private members
+			var doc = document;
+			var setAttributes = function(element, attributes){
+				for(attribute in attributes){
+					element[attribute] = attributes[attribute];
+				}
+			}
+				console.log(doc.getElementsByTagName("head")[0]);
+			return{
+				//Public members
+				addStyleSheet: function(id, url){
+					var newStyleSheet = doc.createElement("link");
+					setAttributes(newStyleSheet, {
+						rel : "stylesheet",
+						type : "text/css",
+						id : id,
+						href: url
+					});
+					doc.getElementsByTagName("head")[0].appendChild(newStyleSheet);
+				},
+
+				removeStyleSheet: function(id){
+					var currentStyleSheet = doc.getElementById(id);
+					if(currentStyleSheet){
+						currentStyleSheet.parentNode.removeChild(currentStyleSheet);
+					}
+				},
+					
+				swapStyleSheet: function(id, url){
+					this.removeStyleSheet(id);
+					this.addStyleSheet(id, url);
+				}
+			}
+		})();
+		Managers.CssManager.addStyleSheet("myStyleSheet", "Default.css");
+		Managers.CssManager.removeStyleSheet("myStyleSheet");
+		Managers.CssManager.swapStyleSheet("myStyleSheet", "Advanced.css");
+		Managers.CssManager.removeStyleSheet("myStyleSheet");
+		Managers.CssManager.swapStyleSheet("myStyleSheet", "murugesh.css");
+	</script>
+ </body>
+</html>

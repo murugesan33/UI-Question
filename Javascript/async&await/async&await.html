@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Our code is also so much cleaner and easier to read When we use Async / await instead of long promise chain</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function doubleAfter2Seconds(x){
+			return new Promise(resolve => {
+			  setTimeout(function(){
+					resolve(x * 2);
+			  },5000);
+			});			
+		}
+		
+		async function addAsync(x){
+			var a = await doubleAfter2Seconds(10);
+			var b = await doubleAfter2Seconds(20);
+			var c = await doubleAfter2Seconds(30);
+		    return x + a + b + c;
+		}
+		
+		addAsync(21).then(sum => {
+			console.log(sum);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+1. foreach -> its loop over array items
+
+2. filter -> A new array with the elements that pass the test. if no elements is pass the test, an empty array will be returned.
+
+
+3. include -> its check the item is in the array. it will return boolean value
+
+4. map -> It create new array by calling the provided function in every element.
+
+5. Array.from -> This changes all the things into array-like.

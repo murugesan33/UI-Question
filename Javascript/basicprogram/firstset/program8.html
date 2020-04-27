@@ -1,0 +1,28 @@
+<html>
+
+<body>
+<div>Find the letter that was added in t.
+    Example:
+    Input:
+    s = "abcd"
+    t = "abcde"
+    
+    Output:
+    e
+    Explanation:
+    'e' is the letter that was added.</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var s = "abcd", t = "abcde", extraLetters = [];
+for (var i = 0; i < t.length; i++) {
+  if (s.indexOf(t[i]) === -1) {
+    extraLetters.push(t[i]);
+  }
+}
+document.getElementById("output").innerHTML = "Added Letters : " + extraLetters.join(",");
+</script>
+
+</html>

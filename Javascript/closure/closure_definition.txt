@@ -1,0 +1,9 @@
+what is closure?
+
+	closure is variable scope in Javascript.
+	
+	The inner function can have access to the outer function variable as well as all
+	the global variable.
+	
+	
+	

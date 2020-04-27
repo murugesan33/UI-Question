@@ -1,0 +1,5 @@
+Copie Object:-
+1. Normal copie 
+var obj = object1
+2. spread operator and Object.assign()
+3. deep copie we can use JSON.parse and JSON.stringify

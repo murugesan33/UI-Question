@@ -1,0 +1,19 @@
+<html>
+
+<body>
+<div>Sum of Digits. Eg: if input is 2743, the output will be 16</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var input = 2743, sum = 0, r;
+while(input > 0) {
+    r = input % 10;
+    sum += r;
+    input = Math.floor(input / 10);
+}
+document.getElementById("output").innerHTML = "SUM of digits : " + sum;
+</script>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paranthesis Match</title>
+</head>
+
+<body>
+<div>How to find the paranthesis are matched & closed correctly?</div>
+<br>
+<div>Eg:- Input: {[()]} -> Output: Matched; Input: {[(])} -> Output: Not Matched</div>
+<br/><br/>
+<div id="input" style="font-weight:bold"></div>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+    var input = "{[()]}", sum = 10, tempMatch = [], stop = 0;
+    document.getElementById("input").innerHTML = input;
+    var inputLength = input.length;
+    for (let i = 0; i < inputLength; i++) {
+        switch (input[i]) {
+            case "{":
+                tempMatch.push("{");
+                break;
+            case "[":
+                tempMatch.push("[");
+                break;
+            case "(":
+                tempMatch.push("(");
+                break;
+            case "}":
+                if (tempMatch[tempMatch.length-1] === "{") {
+                    tempMatch.splice(tempMatch.length - 1, 1);
+                } else {
+                    stop = 1;
+                }
+                break;
+            case "]":
+                if (tempMatch[tempMatch.length-1] === "[") {
+                    tempMatch.splice(tempMatch.length - 1, 1);
+                } else {
+                    stop = 1;
+                }
+                break;
+            case ")":
+                if (tempMatch[tempMatch.length-1] === "(") {
+                    tempMatch.splice(tempMatch.length - 1, 1);
+                } else {
+                    stop = 1;
+                }
+                break;
+            case Default:
+                stop = 1;
+                break;
+        }
+        if (stop) {
+            break;
+        }
+    }
+    document.getElementById("output").innerHTML = "Paranthesis: " + (tempMatch.length ? "Not Matched" : "Matched");
+</script>
+</html>

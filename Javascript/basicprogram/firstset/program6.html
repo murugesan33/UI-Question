@@ -1,0 +1,23 @@
+<html>
+
+<body>
+<div>2. Find the Highest / Lowest value [50,72,11,03,59,66,21,54,60,47]</div>
+<br/><br/>
+<div id="output" style="font-weight:bold"></div>
+</body>
+
+<script type="text/javascript">
+var input = [50,72,11,03,59,66,21,54,60,47];
+var highest = input[0], lowest = input[0];
+for (var i = 0; i < input.length; i++) {
+  if (highest < input[i]){
+      highest = input[i];
+  }
+  if (lowest > input[i]){
+      lowest = input[i];
+  }
+}
+document.getElementById("output").innerHTML = "Highest : " + highest + ", Lowest : " + lowest;
+</script>
+
+</html>
