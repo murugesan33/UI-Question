@@ -1,0 +1,70 @@
+1. what is pure component and functional component?
+
+	Pure component:
+	
+		React component called as pure component. Pure component usually do some perfomance, improvements and render customization. React implements shouldComponentUpdate method for them with shallow comparision for state and props.
+		
+	Functional Component:-
+
+		Functional component especially  used for when you want to isolate state management from the component. Which is why they are called stateless components.
+		
+		Functional component does not support perfomance, improvements and render optamization.
+	
+2. what is class component & functional component?	
+	
+	Both have main difference is syntax	
+
+	functional component:-
+	
+		A functional component is just like a plain javascript function it accepts the props as an arguments and return the React UI elements.
+
+	Class Component:- 
+	
+		A class component requires to extends from React component. It creates a render function to return the React UI elements. 
+		
+		
+3. what is flow of react native?
+	Flow is a static type checker in javascript code. Its developed by Facebook for React Native Component. It let you annotate the variable, function, react native component have the speical type syntax catch the mistake early.
+	
+4. AXIOS & FETCH API difference?
+	
+	1. Fetch Api have 2 arguments first is url & second is parameters
+	
+	2. Fetch Api input parameters recieved in body property
+	
+	3. Fetch API input object convert into string using JSON.stringify()
+	
+	4. Fetch API response object call json function
+	
+	5. Fetch API response object contains Ok property
+	
+	1. AXIOS API have one arguments
+	
+	2. AXIOS API include url in the request parameters
+	
+	3. AXIOS API input parameters recieved in data property
+	
+	4. AXIOS API input parameters like as javascript object.
+	
+	5. AXIOS API response object recieved in status "200" and statusText "OK"
+	
+5. What is the significance of keys in react native?
+
+	The key is an attribute to pass all the components to create dynamically from an array.Its an unique and constant id that identify each component in the DOM. and to know wheather its a different component or same one.
+	
+	
+6. higher order function or component?
+
+		Higher order component is a function it takes a component and return a new component. HOC is reuse the component logic.
+		
+		
+
+	
+
+		
+	
+	
+
+	
+		
+		

@@ -1,0 +1,104 @@
+https://www.javatpoint.com/restful-web-services
+What is web service?
+ Its communicate with two applications or devices through web service for the network.
+ 
+	1. Its is client side application or application compnenent for communcation.
+	2. Its a collection of standard or protocol for exchanging information between 2 devices or application.
+	
+Types of web service?
+
+		1. RESTful
+		2. Soap
+	
+Web Service Components?
+
+	There are three major web service components.	
+	
+		1. SOAP
+		2. WSDL
+		3. UDDI
+		
+SOAP
+		SOAP is an acronym for Simple Object Access Protocol.
+		SOAP is a XML based protocol for accessing web services.
+		SOAP is a XML based, so it is an platform independent and language indepenedent. By using SOAP, you will be able to 
+		interact with other programming language application. 
+		
+WSDL
+		WSDL is an acronym for Web Service Description Language.
+		WSDL is a XML document containing information about web services method name & parameter & how to access it.
+		WSDL is a part of UDDI, its act as a interface between web service application.
+		WSDL is pronounced as "wiz-dull".
+		
+UDDI
+			
+		UDDI is an acronym for Universal Discription & Discovery Integration.
+		UDDI is a XML framework for discribing, discoverying and Integration web service.
+		UDDI is a directory of web service interface is described by WSDL, containing information about web services.
+		
+		
+Advantage
+		SOAP defines its own security known as WS Security.
+		SOAP web service can be written in any programming language and excute in any platform.
+		
+DisAdvantage
+		SOAP uses XML format that must be parsed to be read. It define many standard it must be followed while developing the SOAP application.
+		So it slow its consume more bandwidth and resource.
+		
+RESTfull
+
+		RESTful is an acronym for Representation State Trasfer.	
+		REST is an architectural style not a protocol.
+		
+Advantage		
+		Its is very fast compare to SOAP because here no strict specification. Its consume less bandwidth and resource.
+		RESTfull web service can be written in any programming language and excute in any platform.
+		RESTfull web services can also implement SOAP web services.
+		RESTfull web services different data format like HTML, Plain Text, XML, Json.
+		
+https://stackoverflow.com/questions/9802788/call-a-rest-api-in-php -> restfull		
+		
+		
+SOAP vs REST Web Services
+
+			SOAP 													REST
+			
+1. Soap is a protocol										REST is an architectural style. 
+
+2. SOAP stand for Simple Object Access Protocol				REST stand for Representational state transfer
+
+3. SOAP define standards to be strictly followed			REST does not define too much standards like SOAP
+
+4. SOAP require more bandwidth and resources then			REST have less bandwidth and resource
+   REST							
+   
+5. SOAP defines its own security							REST web service inherits security measures from the underlying transport
+
+6. SOAP permits XML data format only. 						REST permits have different data format like HTML, Text plan, XML, JSON etc.
+
+
+SOAP have some library class
+1. class.nusoap_base
+2. class.soap_fault
+3. class.soap_parser
+4. class.soap_server
+5. class.soap_transport_http
+6. class.soap_val
+7. class.soapclient
+8. class.wsdl
+9. class.wsdlcache
+10. class.xmlschema
+
+
+Class SoapClient:-
+1. __call
+2. __construct
+3. __dorequest
+
+
+
+	   
+		
+		
+			
+

@@ -1,0 +1,50 @@
+What is xml?
+
+	1. xml stands for extensible Markup language is used for describe data.
+	
+	2. Its a flexible way to create information format and electronically share structured
+	data via public internet as well as via corporate networks.
+	
+	3. XML & HTML both contian markup symbol to describe page or file content.
+	
+	
+What is JSON?
+
+		1. JSON standards for JavaScript Object Notation.
+		
+		2. It used for searilizing and transmitting structured data over a network connection.
+		
+		3. It used primarly to transmitting data between a server and web applications
+		
+		4. JSON is an alternative for xml.
+		
+		
+What is AJAX?
+			
+		1. AJAX standards for Asynchronous JavaScript and XML.
+
+		2. AJAX technique to create fast and dynamic web page.
+
+		3. Without reloading the whole page, we can update the web page.
+		
+	There are 5 State:-
+
+		0 -> The request is not initialized
+		
+		1 -> The request has been setup
+		
+		2 -> The request has been sent
+		
+		3 -> The request is in process
+		
+		4 -> The request is complete
+		
+		
+		
+
+		
+		
+	
+	
+	
+	

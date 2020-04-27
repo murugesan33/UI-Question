@@ -1,0 +1,15 @@
+Redux:
+
+	Redux helps apps to scale by providing sensical way to manage the state through unidirectional data flow model.
+	
+	Redux is just a better way of managing the state in the application, The way redux does that is by storing the state of the application in one particulare place it. that one particulare place that is know as "store".  
+	
+	"Store" => only readable the state.
+	
+	How do we modify the state?
+	
+		The state can only be modify something know as "Action". Action cann't be modify directly to the store. The action must go through by "Reducer" and modified the state.
+		
+		"Reducer" -> is a nothing but a function, recieves the action, modified the state, and give as a new state.
+	
+	
