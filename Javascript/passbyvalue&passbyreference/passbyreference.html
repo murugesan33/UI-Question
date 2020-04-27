@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Pass by reference: function is called directly pass the refrence/address of the variable as the argument.Change the value inside the function its effect the variable passed from outside the function. In javascript object or array fellow pass by reference.</title>
+<meta charset="utf-8"/>
+<head>
+<script>
+	function passbyreference(obj){
+		obj.a = 10;
+		document.write("Inside call by reference Method:"+obj.a+"<br/>");
+	}
+	let obj ={
+		a : 100
+	}
+	document.write("Before call by reference Method:"+obj.a+"<br/>");
+	passbyreference(obj);
+	document.write("After Call by reference Method:"+obj.a+"<br/>");
+</script>
+</head>
+<body>
+</body>
+</html>

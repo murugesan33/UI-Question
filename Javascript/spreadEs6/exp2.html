@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Example 2 Spread Operator Maximum Number</title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		var a = [10, 9, 100, 11, 33, 120];
+		console.log(Math.max(a));
+		function max(arr) {
+		  return Math.max.apply(null, arr);
+		}
+
+		console.log(max(a));
+		
+		console.log(Math.max(...a));
+	</script>
+</html>

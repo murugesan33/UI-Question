@@ -1,0 +1,16 @@
+<script>
+function foo(){
+    function bar() {
+		console.log(3);
+        return 3;
+    }
+    return bar();
+    function bar() {
+		console.log(8);
+        return 8;
+    }
+}
+//alert(foo());
+console.log(foo());
+</script>
+

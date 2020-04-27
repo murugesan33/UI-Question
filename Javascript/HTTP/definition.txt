@@ -1,0 +1,72 @@
+What is HTTP?
+
+	1. HTTP standards for Hypertext Transfer Protocol.
+	
+	2. It desinged to enabled communications between client and server.
+	
+	3. It works as a request-response protocol between client and server.
+	
+	4. A web browser may be client, and an application on a computer that hosts a web site
+	may be server.
+	
+	
+	A client web browser submits on HTTP request to the server, and server return the response to the client.
+	
+	
+HTTP Methods:-
+
+		GET, POST, PUT, HEAD, DELETE, PATCH, OPTIONS.
+		
+		
+GET Method:-
+
+		1. GET is used to request data from specified resource.
+		
+		2. GET Method request in URL like query string (name / value) Pair
+		
+		3. GET method request can be cached
+		
+		4. GET Method request remain in browser history
+		
+		5. GET Method request can be bookmarked.
+		
+		6. GET Method request should never be used sensitive data
+		
+		7. GET Method request have data length restriction
+		
+		8. GET requests is only used to request data not modify
+		
+
+
+POST Method:-
+		
+		1. POST request sent data to the server to create/modify the resource.
+		
+		2. POST request never be cached.
+		
+		3. POST request do not remain browser history
+		
+		4. POST request cannot be bookmarked
+		
+		5. POST request dont have data length restriction.
+		
+		6. if you calling same request multiple time, it will have side effect
+		
+		
+PUT Method:-
+
+		PUT request send data to the server to create/modify resource
+
+		If you calling same request multiple time it will return same result.	
+
+
+DELETE Method:-
+
+		DELETE method delete the specified resource.
+		
+		
+		
+
+
+	
+	

@@ -1,0 +1,26 @@
+<html>
+ <head>
+	<title>promises can handled asynchoronouse operations in javascript. They can handled multiple asynchoronouse operations easily and provided bettter error handling then callbacks and events.</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		var promise =  new Promise(function(resolve, reject){
+			const x  = "Murugesh is good boy";
+			const y = "Murugesh is good boy";
+			if(x==y){
+				resolve();
+			}else{
+				reject();
+			}
+		});
+		
+		promise.
+			then(() => {
+				console.log("resolve");
+			}).
+			catch(() => {
+			  console.log("reject");
+			});
+	</script>
+ </body>
+</html>

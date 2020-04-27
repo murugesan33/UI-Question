@@ -1,0 +1,33 @@
+<html>
+ <head>
+	<title>promises can handled asynchoronouse operations in javascript. They can handled multiple asynchoronouse operations easily and provided bettter error handling then callbacks and events.</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		function doubleAfter2Seconds(x) {
+		  return new Promise(resolve => {
+			setTimeout(() => {
+			  resolve(x * 2);
+			}, 2000);
+		  });
+		}
+
+		function addPromise(x){
+		  return new Promise(resolve => {
+			doubleAfter2Seconds(10).then((a) => {
+			  doubleAfter2Seconds(20).then((b) => {
+				doubleAfter2Seconds(30).then((c) => {
+				  resolve(x + a + b + c);
+				})
+			  })
+			})
+		  });
+		}
+
+		addPromise(5).then((sum) => {
+		  console.log(sum);
+		});
+	</script>
+ 
+ </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div>Simple Inheritance Concepts</div>
+
+</body>
+
+<script type="text/javascript">
+function employee(name, age){
+  this.name = name;
+  this.age = age;
+}
+
+function manager(salary){
+  this.salary = salary; 
+}
+
+var obj = new employee("murugesan", 25);
+
+manager.prototype = obj; //inherit func1 
+
+var obj2 = new manager(2300);
+
+console.log(obj2);
+</script>
+</html>

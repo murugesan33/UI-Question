@@ -1,0 +1,8 @@
+Call by Value or Call by Reference?
+Call by Value:-
+	Function is called directly pass the value of the variable as an argument. Changing the 
+	argument inside the function it doesn't affect the variable passed from outside of the
+	function. In Javascript string or number pass by value
+	
+Call by reference:-
+	Function is called directly pass the reference / address of the variable as an argument. Changing the argument inside the function its effect the variable passed form outside the function. In Javascript object and array pass by reference.	

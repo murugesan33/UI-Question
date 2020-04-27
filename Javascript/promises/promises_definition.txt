@@ -1,0 +1,66 @@
+What is promises?
+
+promises can handled asynchoronouse operations in javascript. They can handled multiple
+asynchoronouse operations easily and provided bettter error handling then callbacks and events
+
+1. Improved code readability
+2. better handled in asynchoronouse operations
+3. better control the flow of asynchoronouse operations
+4. better error handling
+
+
+states
+1. fulfilled  -> Action to the promises successeed
+2. rejected -> Action to the promises failed
+3. pending ->  promises is still pending. not yet fulfilled or rejected
+4. settled -> promises is either fulfilled or rejected
+
+promises can be created using promises contstructure
+syntax
+ var promise =  new promise(function(resolve, reject){
+	//do something
+ });
+ 
+ 1. promise have one arguments, a callback function, 
+ 2. callback function have 2 arguments 1. resolve 2. reject
+ 3. perform operations if everything goes well, then call "resolve".
+ 4. perform operations is not goes well, then call "reject".
+ 
+then()
+	then method takes 2 functions an parameters
+ 
+	1. first functions is executed promise is resolve and recieved the value
+	2. second functions is executed promise is reject and error is recieved 
+	  (It is optional and there is a better way to hanlde error using .catch() method)
+	  
+catch()
+	catch method its invoked either the reject or error occur in the execution	
+	catch method have 1 function
+	catch method have handled promise reject or error occur
+	
+See example in sample1.html	
+	
+	
+What is Promises?
+
+		Promises is an object, that keeps track about wheather the certian event has happened
+		already or not.
+		
+		If it did happen, then the promises determine what happen for the next. 
+		
+		if the eventsier, I mean the asynchoronouse eventsier like timing finishing, 
+		and data coming back from ajax call.
+		
+		Promise is kind of implements, the concepts of future value that we're expecting.
+		
+		
+		
+		
+		
+	
+ 	  
+	
+ 
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Promise
+        </title>
+    </head>
+     <body>
+         <div style="width:100%;border:1px solid red">
+            Promise is an object that keeps track about wheather the certain event has happened already or not
+            if it did happen, then the promise determine what happen for the next
+            if it eventsier, I mean Asynchronous eventsier like timing finishing, data coming back from AJAX calls
+            Promise is kind of implements, the concepts of feature values that we're expecting.
+         </div>
+     </body>
+     <script>
+         const getIDs = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const recepIds = [123,405,567,987];
+                resolve(recepIds);
+            }, 1500);
+         });
+
+         const getRecpIds = (recpID) => {
+             return new Promise((resolve, reject)=>{
+                    setTimeout((id) => {
+                        const recp = {
+                            title: 'Fresh tomato pasta',
+                            publisher : 'murugesh'
+                        }
+                        resolve(`${id}, ${recp.title}`);
+                    }, 1000, recpID);
+             });
+         }
+         getIDs
+         .then((IDs)=>{
+             console.log(IDs);
+            return getRecpIds(IDs[1]);
+         })
+         .then((data)=>{
+            console.log(data);
+         })
+         .catch((err)=>{
+             console.log(err);
+         })
+     </script>
+</html>

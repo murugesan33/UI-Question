@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Pass by value: Function is called directly pass the value of the variable as the argument.Changing the argument inside the function it doesn't affect the variable passed from outside the function. In Javascript (string and number) pass by value</title>
+<meta charset="utf-8"/>
+<head>
+<script>
+	function passbyvalue(oneVar, twoVar){
+		oneVar = 100;
+		twoVar = 200;
+		document.write("Inside Call by Value Method: "+oneVar+"  "+twoVar+"<br/>");
+	}
+	var oneVar = 10;
+	var twoVar = 20;
+	passbyvalue(oneVar, twoVar);
+	document.write("After Call by Value Method: "+oneVar+"  "+twoVar);
+</script>
+</head>
+<body>
+</body>
+</html>

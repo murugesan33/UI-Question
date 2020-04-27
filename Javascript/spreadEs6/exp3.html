@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Example 3 Spread Operator Maximum Number</title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		var a = [10, 9, 100, 11, 33, 120];
+		var b = a;
+		console.log(b);	
+        b.push(40);
+		console.log("b======="+b);	
+		console.log("a======="+a);
+		console.log("After spread operator Using");
+		var c = [10, 9, 100, 11, 33, 120];
+		var d = [...c];
+		console.log("Spread operator d");
+		console.log(d);
+		d.push(35);
+		console.log("c======="+c);	
+		console.log("d======="+d);
+	</script>
+</html>
